@@ -9,7 +9,7 @@ date: May 2026
 
 ## Abstract
 
-This report documents the research conducted over approximately three months (February–May 2026) as part of the UGRC project at IIT Madras. The goal was to identify and evaluate an open-source hardware platform capable of running a Hardware Processing Engine (HWPE) on an FPGA, and to then use a software toolchain to compile and execute benchmarks on it. Four broad platform families were investigated: Google Coral NPU, the PULP Platform (PULPissimo), a range of alternative PULP-derived platforms, and X-HEEP extended with the Quadrilatero systolic-array co-processor. The project concluded with a working simulation of X-HEEP+Quadrilatero executing matrix-multiply and convolution workloads, a fixed RTL bug in Quadrilatero's handshake logic, and a generated FPGA bitstream ready for hardware testing.
+This report documents the research conducted over approximately three months (February–May 2026) as part of the UGRC project at IIT Madras. The goal was to identify and evaluate an open-source hardware platform capable of running a Hardware Processing Engine (HWPE) on an FPGA, and to then use a software toolchain to compile and execute benchmarks on it. Three broad platform families were investigated: Google Coral NPU, the PULP Platform (PULPissimo and a range of alternative PULP-derived platforms) and X-HEEP extended with the Quadrilatero systolic-array co-processor. The project concluded with a working simulation of X-HEEP+Quadrilatero executing matrix-multiply and convolution workloads, a fixed RTL bug in Quadrilatero's handshake logic, and a generated FPGA bitstream ready for hardware testing.
 
 ---
 

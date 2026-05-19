@@ -34,6 +34,21 @@
     #include "matrixMul32.h"
     #define SIZE_BYTE 4
     #pragma message ( "Compiling for 32bit input data" )
+#elif defined(MATMUL4)
+    #define input_type_t int32_t
+    #include "matrixMul4.h"
+    #define SIZE_BYTE 4
+    #pragma message ( "Compiling for 4x4 int32 demo" )
+#elif defined(MATMUL8X8)
+    #define input_type_t int32_t
+    #include "matrixMul8x8.h"
+    #define SIZE_BYTE 4
+    #pragma message ( "Compiling for 8x8 int32 demo" )
+#elif defined(MATMUL16X16)
+    #define input_type_t int32_t
+    #include "matrixMul16x16.h"
+    #define SIZE_BYTE 4
+    #pragma message ( "Compiling for 16x16 int32 demo" )
 #else
     #define input_type_t int8_t
     #define SIZE_BYTE 1

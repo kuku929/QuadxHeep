@@ -348,7 +348,8 @@ module quadrilatero_systolic_array #(
     end
   end
  
-  assign sa_ready_o          = (ff_counter_d=='0) & ((ff_active_q &~ ff_counter_q=='0) | (~ff_active_q & ~fs_active_q & ~dr_active_q));
+//   assign sa_ready_o          = (ff_counter_d=='0) & ((ff_active_q &~ ff_counter_q=='0) | (~ff_active_q & ~fs_active_q & ~dr_active_q));
+  assign sa_ready_o          = (~ff_active_q & ~fs_active_q & ~dr_active_q);
   assign sa_input_id_o       = id_ff_q            ;
   assign sa_output_id_o      = id_dr_q            ;
   assign finished_o          = finished_q         ;

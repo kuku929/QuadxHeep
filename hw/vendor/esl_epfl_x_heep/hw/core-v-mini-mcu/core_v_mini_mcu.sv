@@ -484,6 +484,18 @@ module core_v_mini_mcu
   assign memory_subsystem_banks_powergate_iso_n[10] = memory_subsystem_pwr_ctrl_out[10].isogate_en_n;
   assign memory_subsystem_banks_set_retentive_n[10] = memory_subsystem_pwr_ctrl_out[10].retentive_en_n;
   assign memory_subsystem_clkgate_en_n[10] = memory_subsystem_pwr_ctrl_out[10].clkgate_en_n;
+  assign memory_subsystem_banks_powergate_switch_n[11] = memory_subsystem_pwr_ctrl_out[11].pwrgate_en_n;
+  assign memory_subsystem_pwr_ctrl_in[11].pwrgate_ack_n = memory_subsystem_banks_powergate_switch_ack_n[11];
+  //isogate exposed outside for UPF sim flow and switch cells
+  assign memory_subsystem_banks_powergate_iso_n[11] = memory_subsystem_pwr_ctrl_out[11].isogate_en_n;
+  assign memory_subsystem_banks_set_retentive_n[11] = memory_subsystem_pwr_ctrl_out[11].retentive_en_n;
+  assign memory_subsystem_clkgate_en_n[11] = memory_subsystem_pwr_ctrl_out[11].clkgate_en_n;
+  assign memory_subsystem_banks_powergate_switch_n[12] = memory_subsystem_pwr_ctrl_out[12].pwrgate_en_n;
+  assign memory_subsystem_pwr_ctrl_in[12].pwrgate_ack_n = memory_subsystem_banks_powergate_switch_ack_n[12];
+  //isogate exposed outside for UPF sim flow and switch cells
+  assign memory_subsystem_banks_powergate_iso_n[12] = memory_subsystem_pwr_ctrl_out[12].isogate_en_n;
+  assign memory_subsystem_banks_set_retentive_n[12] = memory_subsystem_pwr_ctrl_out[12].retentive_en_n;
+  assign memory_subsystem_clkgate_en_n[12] = memory_subsystem_pwr_ctrl_out[12].clkgate_en_n;
 
   for (genvar i = 0; i < EXT_DOMAINS_RND; i = i + 1) begin : gen_external_subsystem_pwr_gating
     assign external_subsystem_powergate_switch_no[i]        = external_subsystem_pwr_ctrl_out[i].pwrgate_en_n;

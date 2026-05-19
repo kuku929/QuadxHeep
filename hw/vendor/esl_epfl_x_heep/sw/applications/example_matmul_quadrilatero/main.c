@@ -6,7 +6,7 @@
 
 /*Variable Data Type*/
 // Supported types: int32_t (0), float (1), int8_t (2), int16_t (3), Small(4)
-#define TYPE 0
+#define TYPE 4
 
 /* Output tile size */
 // Supported values: 16 (4x4), 64 (8x8).
@@ -14,7 +14,7 @@
 
 /* By default, printfs are activated for FPGA and disabled for simulation. */
 #define PRINTF_IN_FPGA  1
-#define PRINTF_IN_SIM   1
+#define PRINTF_IN_SIM   0
 
 
 #include <stdbool.h>
