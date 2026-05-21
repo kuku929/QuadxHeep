@@ -69,7 +69,7 @@ X-HEEP extended with the Quadrilatero systolic-array co-processor, which
 achieves simulation-verified matrix multiply and convolution workloads. We
 identify and fix an RTL handshake deadlock in Quadrilatero that prevented
 any result from being produced, and provide a fully reproducible Docker-based
-build environment.
+build environment~\cite{quadxheep_repo}.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -670,7 +670,8 @@ The main takeaway from this survey is that software ecosystem maturity matters
 as much as hardware quality. PULPissimo's hardware is well-designed; the problem
 is that the software around it has gone stale. X-HEEP's Docker image, Verilator
 flow, and Makefile build system made it possible to go from a blank machine to a
-verified simulation.
+verified simulation. The full build environment and patched sources are available
+at~\cite{quadxheep_repo}.
 
 Open problems include FPGA hardware validation against the simulation and
 integration of the Deeploy compiler framework to enable deployment of full neural
